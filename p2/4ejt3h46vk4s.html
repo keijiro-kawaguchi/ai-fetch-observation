@@ -3,7 +3,8 @@
 <meta name="robots" content="noindex"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
 <body><div id="root"></div>
 <script>
-(function(){var c=atob("TExNTy01OEJFLTRBNzQtRDU2Mw==");var r=document.getElementById("root");
-r.innerHTML="<main><h1>観測ページ p2（JavaScript で描画）</h1><p>これは Nihonbashi AI Lab が、AI の取得者がページから何を受け取るかを調べるために置いた研究用のページです。個人の情報は集めていません。</p><p>確認コード（JavaScript 実行後）: <code>"+c+"</code></p></main>";
-new Image().src="https://ipwmntmiyubfajvhbark.supabase.co/functions/v1/observe/b/4ejt3h46vk4s/p2js?"+Date.now();})();
+(function(){var r=document.getElementById("root");
+fetch("https://ipwmntmiyubfajvhbark.supabase.co/functions/v1/observe/c/4ejt3h46vk4s/p2js",{mode:"cors",cache:"no-store"}).then(function(x){return x.text();}).then(function(t){
+r.innerHTML="<main><h1>観測ページ p2（JavaScript で描画）</h1><p>これは Nihonbashi AI Lab が、AI の取得者がページから何を受け取るかを調べるために置いた研究用のページです。個人の情報は集めていません。</p><p>確認コード（JavaScript 実行後）: <code>"+t.trim()+"</code></p></main>";}).catch(function(){
+r.innerHTML="<main><h1>観測ページ p2（JavaScript で描画）</h1><p>取得に失敗しました。</p></main>";});})();
 </script></body></html>

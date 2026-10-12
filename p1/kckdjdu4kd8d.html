@@ -8,6 +8,6 @@
 <p id="js-token">確認コード（JavaScript 実行後）: （JavaScript が実行されていません）</p>
 </main>
 <script>
-(function(){var t=atob("TExNTy1GMDVCLUU3MTUtQzMyQQ==");var e=document.getElementById("js-token");if(e){e.textContent="確認コード（JavaScript 実行後）: "+t;}
-new Image().src="https://ipwmntmiyubfajvhbark.supabase.co/functions/v1/observe/b/kckdjdu4kd8d/p1js?"+Date.now();})();
+(function(){var e=document.getElementById("js-token");
+fetch("https://ipwmntmiyubfajvhbark.supabase.co/functions/v1/observe/c/kckdjdu4kd8d/p1js",{mode:"cors",cache:"no-store"}).then(function(r){return r.text();}).then(function(t){if(e){e.textContent="確認コード（JavaScript 実行後）: "+t.trim();}}).catch(function(){if(e){e.textContent="確認コード（JavaScript 実行後）: （取得に失敗しました）";}});})();
 </script></body></html>
